@@ -9,16 +9,16 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body class="h-screen flex justify-center items-center ">
+<body class="h-screen flex justify-center  overflow-hidden">
     <div
-        class="bg-[hsl(0_0%_15%)] rounded-xl overflow-hidden select-none max-w-[300px] flex justify-center items-center flex-col">
+        class="bg-[hsl(0_0%_15%)] lg:rounded-xl overflow-hidden select-none max-w-full  lg:max-w-[400px]  flex justify-center items-center flex-col p-0 m-0">
         <input tabindex="-1" id="display" readonly
-            class="w-full p-3 flex justify-center items-center  bg-[hsl(0_0%_20%)] text-white text-right text-[2rem] font-bold border-none">
-        <div id="keys" class="grid  grid-cols-4  justify-items-center gap-4 p-5 content-center 
+            class="w-full p-5 flex justify-center items-center  bg-[hsl(0_0%_20%)] text-white text-right text-[3rem] font-bold border-none">
+        <div id="keys" class="grid  grid-cols-4  h-full justify-items-center gap-4  content-center 
     [&>button]:bg-[hsl(0_0%_30%)]
     [&>button]:rounded-full
-    [&>button]:w-12
-    [&>button:not(.plus)]:h-12
+    [&>button]:w-[4.5rem]
+    [&>button:not(.plus)]:h-[4.5rem]
     [&>button]:text-white
     [&>button]:inline-flex
     [&>button]:justify-center
