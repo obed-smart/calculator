@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="h-screen flex justify-center items-center ">
+    <div
+        class="bg-[hsl(0_0%_15%)] rounded-xl overflow-hidden select-none max-w-[300px] flex justify-center items-center flex-col">
+        <input tabindex="-1" id="display" readonly
+            class="w-full p-3 flex justify-center items-center  bg-[hsl(0_0%_20%)] text-white text-right text-[2rem] font-bold border-none">
+        <div id="keys" class="grid  grid-cols-4  justify-items-center gap-4 p-5 content-center 
+    [&>button]:bg-[hsl(0_0%_30%)]
+    [&>button]:rounded-full
+    [&>button]:w-12
+    [&>button:not(.plus)]:h-12
+    [&>button]:text-white
+    [&>button]:inline-flex
+    [&>button]:justify-center
+    [&>button]:items-center 
+    [&>button]:text-[2rem]
+    [&>button.operators]:bg-[hsl(35_100%_65%)]
+    [&>button.special]:bg-[hsl(0_0%_80%)]
+    [&>button.special]:text-[hsl(0_0%_4%)]
+    ">
+            <button id="clear" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)] special ">C</button>
+            <button id="remainder" class="hover:bg-[hsl(0_0%_10%)] active:bg-[hsl(0_0%_50%)] special">%</button>
+            <button id="delete" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)] special"><ion-icon
+                    name="trash-outline" class="text-3xl"></ion-icon></button>
+            <button data-value="/" class="operators hover:bg-[hsl(35_100%_50%)]">/</button>
+            <button data-value="7" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">7</button>
+            <button data-value="8" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">8</button>
+            <button data-value="9" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">9</button>
+            <button data-value="-" class="operators hover:bg-[hsl(35_100%_50%)]">-</button>
+            <button data-value="4" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">4</button>
+            <button data-value="5" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">5</button>
+            <button data-value="6" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">6</button>
+            <button data-value="*" class="operators hover:bg-[hsl(35_100%_50%)]">*</button>
+            <button data-value="1" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">1</button>
+            <button data-value="2" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">2</button>
+            <button data-value="3" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">3</button>
+            <button data-value="+"
+                class="operators hover:bg-[hsl(35_100%_50%)] plus row-start-4 row-end-6 col-start-4">+</button>
+            <button data-value="0" class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">0</button>
+            <button data-value="." class="hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">.</button>
+            <button id="equals" class=" hover:bg-[hsl(0_0%_40%)] active:bg-[hsl(0_0%_50%)]">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
